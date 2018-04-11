@@ -9,15 +9,15 @@ seahawk_scores <- c(12,37,26,25)
 seahawks_scored_against <- c(10, 18, 24, 20)
 
 # Combine your two vectors into a dataframe called `games`
-seahawks_data <- data.frame(seahawk_scores,seahawks_scored_against)
+seahawks_data <- data.frame(seahawk_scores, seahawks_scored_against)
 
 # Create a new column "diff" that is the difference in points between the teams
 # Hint: recall the syntax for assigning new elements (which in this case will be
 # a vector) to a list!
-
-
+# Combine your two vectors into a dataframe called `games`
+seahawks_Data$diff <- seahawks_data$seahawk_scores- seahawks_data$seahawks_scored_against
 # Create a new column "won" which is TRUE if the Seahawks won the game
-
+seahawks_data$won <- seahawks_data$diff > 0
 
 # Create a vector of the opponent names corresponding to the games played
 
